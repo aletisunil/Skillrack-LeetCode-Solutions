@@ -1,0 +1,45 @@
+import java.util.*;
+public class ReverseStringtillunderscore {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		int k=0;
+		char[] c=s.toCharArray();
+		int count=0;
+		for(int i=0;i<c.length;i++)
+		{
+		    if(c[i]=='_')
+		    {
+		        count++;
+		    }
+		}
+		if(count>=1)
+		{
+		for(int i=0;i<c.length;i++)
+		{
+		  if(c[i]=='_')
+		    {
+		        k=i;
+		        break;
+		    }
+		    }
+		for(int i=k-1;i>=0;i--)
+		{
+		    System.out.print(c[i]);
+		}
+		for(int i=k;i<c.length;i++)
+		{
+		    System.out.print(c[i]);
+		}
+		}
+		else
+		{
+		    for(int i=c.length-1;i>=0;i--)
+		    {
+		        System.out.print(c[i]);
+		    }
+		}
+	}
+}
