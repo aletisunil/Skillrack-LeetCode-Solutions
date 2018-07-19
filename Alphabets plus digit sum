@@ -1,0 +1,42 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine().toLowerCase();
+	   char[] c=s.toCharArray();
+	    int sum=0;
+	    int p=0,p1=0;
+	    for(int i=0;i<c.length;i++)
+	    {
+	        if(c[i]-'0'>=0 && c[i]-'0'<=9)
+	        {
+	            sum=sum+c[i]-'0';
+	        }
+	    }
+	    if(sum>=26)
+	    {
+	        sum=sum%26;
+	    }
+	    for(int i=0;i<c.length;i++)
+	    {
+	        if(c[i]>=97 && c[i]<=122)
+	        {
+	            p=sum+c[i];
+	            if(p>122)
+	            {
+	                p1=p%122;
+	                p=p1+96;
+	                System.out.print((char)p);
+	                
+	            }
+	            else
+	            {
+	                System.out.print((char)p);
+	            }
+	        }
+	    }
+		
+
+	}
+}
