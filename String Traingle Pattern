@@ -1,0 +1,35 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		    Scanner sc=new Scanner(System.in);
+		    int n=sc.nextInt();
+		    ArrayList<String> strings=new ArrayList<String>();
+		    while(sc.hasNext())
+		    {
+		        strings.add(sc.next());
+		    }
+		    int count=0;
+		    for(int i=0;strings.size()>count;i++)
+		    {
+		        for(int j=0;j<i+1;j++)
+		        {
+		            if(count<strings.size())
+		            {
+		                String temp=strings.get(count++);
+		                System.out.print(temp.substring(temp.length()-n,temp.length())+" ");
+		               
+		            }
+		            else
+		            {
+		                for(int k=0;k<n;k++)
+		                {
+		                    System.out.print('*');
+		                }
+		                System.out.println();
+		            }
+		            
+		        }
+		    }
+	}
+}
