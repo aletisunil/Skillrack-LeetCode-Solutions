@@ -1,0 +1,36 @@
+import java.util.*;
+public class Hello {
+  public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		char[] c=s.toCharArray();
+		String sr="";
+    for(int i=0;i<c.length;i++)
+		{
+		    if(c[i]>=46 && c[i]<=57) 
+		    {
+		        sr+=c[i];
+		    }
+		    else
+		    {
+		        sr+=" ";
+		    }
+		}
+		String s2=sr.trim();
+		String s1[]=s2.split(" ");
+		for(int i=0;i<s1.length;i++)
+		{
+        char[]c1=s1[i].toCharArray();
+          for(int  j=0;j<c1.length;j++)
+          {
+              if(c1[j]==46)
+              {
+                  System.out.println(s1[i]);
+              }
+          }
+		
+		}
+		
+
+	}
+}
