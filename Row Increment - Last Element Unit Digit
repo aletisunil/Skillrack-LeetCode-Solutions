@@ -1,0 +1,35 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc=new Scanner(System.in);
+		int r=sc.nextInt();
+		int c=sc.nextInt();
+		int[][]a=new int[r][c];
+		int[] n=new int[r];
+		for(int i=0;i<r;i++)
+		{
+		    for(int j=0;j<c;j++)
+		    {
+		        a[i][j]=sc.nextInt();
+		        
+		    }
+		 }
+		 for(int i=0;i<r;i++)
+		 {
+		     n[i]=a[i][c-1]%10;
+		     
+		 }
+		 for(int i=0;i<r;i++)
+		 {
+		     for(int j=0;j<c;j++)
+		     {
+		         System.out.print(a[i][j]+n[i]+" ");
+		     }
+		     System.out.println();
+		 }
+		
+
+	}
+}
