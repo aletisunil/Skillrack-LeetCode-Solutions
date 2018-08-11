@@ -1,0 +1,36 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int r=sc.nextInt();
+		int c=sc.nextInt();
+		int[][]a=new int[r][c];
+		int count[]=new int[999999];
+		int k=0;
+		for(int i=0;i<r;i++)
+		{
+		    for(int j=0;j<c;j++)
+		    {
+		        a[i][j]=sc.nextInt();
+		        count[a[i][j]]++;
+		    }
+		}
+		for(int i=0;i<count.length;i++)
+		{
+		    if(count[i]>c)
+		    {
+		        System.out.print("NO"); 
+		        System.exit(0);
+		    }
+		    else
+		    {
+		        k++;
+		    }
+		}
+		if(k==count.length)
+		{
+		    System.out.print("YES");
+		}
+	}
+}
