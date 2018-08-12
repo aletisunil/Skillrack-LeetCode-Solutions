@@ -1,0 +1,32 @@
+int main()
+{
+    int n,d,d1;
+    long int  k;
+    scanf("%d",&n);
+    int a[n];
+    int i,j;
+    for( i=1;i<=n;i++)
+    {
+        scanf("%d ",&a[i]);
+    }
+    scanf("%ld",&k);
+    if(n<k)
+    {
+        d1=k%n;
+        d=n-d1;
+    }
+    else
+    {
+
+        d=n-k;
+    }
+    for(i=d+1;i<=n;i++)
+    {
+        printf("%d ",a[i]);
+    }
+    for(i=1;i<=d;i++)
+    {
+        printf("%d ",a[i]);
+    }
+    }
+    
