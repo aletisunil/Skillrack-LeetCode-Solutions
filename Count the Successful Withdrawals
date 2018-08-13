@@ -1,0 +1,19 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int x=sc.nextInt();
+		int y=sc.nextInt();
+		int d=0,count=0;
+		while(a>=(x+y))
+		{
+		a=a-(x+y);
+		count++;
+		}
+		System.out.print(count);
+
+	}
+}
