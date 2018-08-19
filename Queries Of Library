@@ -1,0 +1,80 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt(),l=0,k=0,m=0;
+		String[] s=new String[n];
+		String[] add =new String[n];
+		String[] sub=new String[n];
+		String[] res=new String[n];
+		int[] count=new int[n];
+		for(int i=0;i<n;i++)
+		{
+		    s[i]=sc.next();
+		 }
+		 for(int i=0;i<n;i++)
+		 {
+		     if(s[i].charAt(0)=='+')
+		     {
+		         String t="";
+		         for(int j=1;j<s[i].length();j++)
+		         {
+		             t+=s[i].charAt(j);
+		         }
+		         add[k++]=t;
+		     }
+		     if(s[i].charAt(0)=='-')
+		     {
+		         String t="";
+		         for(int j=1;j<s[i].length();j++)
+		         {
+		             t+=s[i].charAt(j);
+		         }
+		         sub[l++]=t;
+		     }
+		 }
+		 for(int i=0;i<k;i++)
+		 {
+		     count[i]=0;
+		     for(int j=0;j<k;j++)
+		     {
+		         if(add[i].equals(add[j]))
+		         {
+		             count[i]++;
+		         }
+		     }
+		 }
+		 for(int i=0;i<k;i++)
+		 {
+		     for(int j=0;j<l;j++)
+		     {
+		         if(add[i].equals(sub[j]))
+		         {
+		             count[i]=count[i]-1;
+		         }
+		     }
+		 }
+		 int max=Arrays.stream(count).max().getAsInt();
+		 for(int i=0;i<k;i++)
+		 {
+		     if(count[i]==max)
+		     {
+		         res[m++]=add[i];
+		     }
+		 }
+		 List<Integer> li=new ArrayList<>();
+		 for(int i=0;i<m;i++)
+		 {
+		     li.add(Integer.parseInt(res[i]));
+		 }
+		 Collections.sort(li,Collections.reverseOrder());
+		 Set<Integer>result=new LinkedHashSet<>(li);
+		 for(Integer i:result)
+		 {
+		     System.out.print(i+" ");
+		 }
+
+	}
+}
