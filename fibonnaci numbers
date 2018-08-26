@@ -1,0 +1,42 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int[]k1 =new int[n];
+		for(int i=0;i<n;i++)
+		{
+		    k1[i]=sc.nextInt();
+		}
+		int a=0;
+		int b=1;
+		int p=0;
+		int[] k=new int[1000];
+	     k[0]=0;
+	     k[1]=1;
+		for(int i=2;i<100;i++)
+		{
+		   int  c=a+b;
+		   k[i]=c;
+		    a=b;
+		    b=c;
+		    
+		 }
+		 for(int i=0;i<n;i++)
+		 {
+		     for(int j=0;j<k.length;j++)
+		     {
+		         if(k1[i]==k[j])
+		         {
+		             System.out.print(k1[i]+" ");
+                 break;
+		         }
+		     }
+		 }
+		 
+		
+
+	}
+}
