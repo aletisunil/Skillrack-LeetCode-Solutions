@@ -1,0 +1,48 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	   Scanner sc=new Scanner(System.in);
+	   int r=sc.nextInt();
+	   int c=sc.nextInt();
+	   char[][] p=new char[r][c];
+	   for(int i=0;i<r;i++)
+	   {
+	       for(int j=0;j<c;j++)
+	       {
+	           p[i][j]=sc.next().charAt(0);
+	           
+	       }
+	   }
+       char k=sc.next().charAt(0);
+       if(k=='l' || k=='L')
+       {
+           for(int i=0;i<r;i++)
+           {
+               for(int j=0;j<c;j++)
+               {
+                   if(p[i][j]!='-')
+                   {
+                       System.out.print(p[i][j]);
+                       break;
+                   }
+               }
+           }
+       }
+       else
+       {
+           for(int i=0;i<r;i++)
+           {
+               for(int j=c-1;j>=0;j--)
+               {
+                   if(p[i][j]!='-')
+                   {
+                       System.out.print(p[i][j]);
+                       break;
+                   }
+               }
+           }
+       }
+      
+	}
+}
