@@ -1,0 +1,36 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc=new Scanner(System.in);
+		int s=sc.nextInt();
+		String  tc=Integer.toBinaryString(s);
+		char[]c=tc.toCharArray();
+		int count=0;
+		List<Integer> res=new ArrayList<Integer>();
+		for(int i=0;i<c.length;i++)
+		{
+		    
+		    if(Character.getNumericValue(c[i])==1)
+		    {
+		        count++;
+		    }
+		    else
+		    {
+		        if(count>=1)
+		        {
+		             res.add(count);
+		        }
+		        count=0;
+		    }
+		    if(count>=1)
+		    {
+		        res.add(count);
+		    }
+		}
+		System.out.print(Collections.max(res));
+	
+
+	}
+}
