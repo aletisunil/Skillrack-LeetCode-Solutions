@@ -1,0 +1,34 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int x=sc.nextInt();
+		int m=sc.nextInt();
+		int n=sc.nextInt();
+		int count=0;
+		int r=0;
+		int k=0;
+		int[] a=new int[n-m-1];
+		for(int i=m+1;i<n;i++)
+		{
+		    a[k]=i;
+		    k++;
+		    
+		}
+	    for(int i=0;i<a.length;i++)
+		{
+		     while(a[i]>0)
+		    {
+		        r=a[i]%10;
+		        if(r==x)
+		        {
+		            count++;
+		        }
+		        a[i]=a[i]/10;
+		    }
+		}
+		System.out.print(count);
+
+	}
+}
