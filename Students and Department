@@ -1,0 +1,22 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		//Your Code Here
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		String[] s=new String[2*n];
+		for(int i=0;i<2*n;i++)
+		{
+		    s[i]=sc.next();
+		}
+		String s1=sc.next();
+		for(int i=0;i<s.length;i++)
+        {
+            if(s[i].equals(s1))
+            {
+                System.out.println(s[i-1]);
+            }
+        }
+	}
+}
