@@ -1,0 +1,49 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		char c=sc.next().charAt(0);
+		int n=sc.nextInt();
+		if(c=='O')
+		{
+		    if(n==1)
+		    {
+		        System.out.print("Ola Auto");
+		    }
+		    else if(n==2)
+		    {
+		        System.out.print("Ola Mini");
+		    }
+		    else if(n==3)
+		    {
+		        System.out.print("Ola Micro");
+		    }
+		    else if(n==4)
+		    {
+		        System.out.print("Ola Prime");
+		    }
+		    else 
+		    {
+		        System.out.print("Invalid");
+		    }
+		}
+		else if(c=='U')
+		{
+		    if(n==1)
+		    {
+		        System.out.print("Uber Auto");
+		    }
+		    else if(n==2)
+		    {
+		        System.out.print("Uber Cab");
+		    }
+		    else
+		    {
+		        System.out.print("Invalid");
+		    }
+		    
+		}
+
+	}
+}
