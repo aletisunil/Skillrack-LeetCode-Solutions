@@ -1,0 +1,32 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      int x=sc.nextInt();
+      int y=sc.nextInt();
+      int price=0;
+      int final_price=0;
+      if(x>=2 && x<=4)
+      {
+         final_price=((x*y)*90)/100;
+         System.out.print(final_price);
+          
+      }
+      else if(x==5)
+      {
+         final_price=((x*y)*80)/100;
+          System.out.print(final_price);
+      }
+      else if(x>5)
+      {
+         final_price=((x*y)*50)/100;
+          System.out.print(final_price);
+      }
+      else
+      {
+          System.out.print(x*y);
+      }
+
+	}
+}
