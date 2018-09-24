@@ -1,0 +1,44 @@
+import java.util.*;
+public class Hello {
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int r=sc.nextInt();
+		int c=sc.nextInt();
+		int [][] a=new int[r][c];
+		for(int i=0;i<r;i++)
+		{
+		    for(int j=0;j<c;j++)
+		    {
+		        a[i][j]=sc.nextInt();
+		    }
+		}
+		int sum=0;
+		int k1=0;
+		int k2=0;
+		if(r%2==0)
+		{
+		    k1=r/2; 
+		}
+		else
+		{
+		    k1=(r+1)/2;
+		}
+		if(c%2==0)
+		{
+		     k2=c/2;
+		}
+		else
+		{
+		    k2=(c+1)/2;
+		}
+		for(int i=0;i<k1;i++)
+		{
+		    for(int j=0;j<k2;j++)
+		    {
+		        sum=sum+a[i][j];
+		    }
+		}
+		System.out.print(sum);
+
+	}
+}
