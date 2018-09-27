@@ -1,0 +1,25 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s1=sc.next();
+		String s2=sc.next();
+		int k1=s1.length();
+		int k2=s2.length();
+		if(k1>k2)
+		{
+		    System.out.print(s1);
+		}
+		else if(k1==k2)
+		{
+		    System.out.print(s1);
+		}
+		else
+		{
+		    System.out.print(s2);
+		}
+		
+
+	}
+}
