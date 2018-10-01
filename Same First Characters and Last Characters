@@ -1,0 +1,58 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	  Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		String[] s=new String[n];
+		for(int i=0;i<n;i++)
+		{
+		    s[i]=sc.next();
+		}
+		for(int i=0;i<n;i++)
+		{
+		    s[i]=s[i].toLowerCase();
+		}
+		String s1="";
+		String s2="";
+		for(int i=0;i<n;i++)
+		{
+		    s1=s1+s[i].charAt(0);
+		    s2=s2+s[i].charAt(s[i].length()-1);
+		}
+		char[] c1=s1.toCharArray();
+		char[] c2=s2.toCharArray();
+		int n1=0;
+		int n2=0;
+	    for(int i=0;i<c1.length;i++)
+		{
+		    if(c1[0]==c1[i])
+		    {
+		        n1=n1+0;
+		    }
+		    else if(c1[0]!=c1[i])
+		    {
+		        n1=n1+1;
+		    }
+		 }
+		for(int i=0;i<c2.length;i++)
+		{
+		    if(c2[0]==c2[i])
+		    {
+		        n2=n2+0;
+		     }
+		    else
+		    {
+		        n2=n2+1;
+		     }
+		  }
+		if((n1==0) && (n2==0))
+		{
+		    System.out.print("YES");
+		}
+		else
+		{
+		    System.out.print("NO");
+		}
+    }
+}
