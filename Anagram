@@ -1,0 +1,36 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		String s1=sc.next();
+		String s2=sc.next();
+		char[] c1=s1.toCharArray();
+		Arrays.sort(c1);
+		char[] c2=s2.toCharArray();
+		Arrays.sort(c2);
+		int c=0;
+		if(c1.length==c2.length)
+		{
+		    for(int i=0;i<c1.length;i++)
+		    {
+		        if(c1[i]-'0'!=c2[i]-'0')
+		        {
+		            System.out.print("NO");
+		            c=1;
+		            
+		        }
+		    }
+		
+		if(c==0)
+		{
+		    System.out.print("YES");
+		}
+		}
+		else
+		{
+		    System.out.print("NO");
+		}
+
+	}
+}
