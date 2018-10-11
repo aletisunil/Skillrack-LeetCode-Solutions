@@ -1,0 +1,25 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	   Scanner sc=new Scanner(System.in);
+	   String s=sc.next();
+	   char c[] =s.toCharArray();
+	   for(int i=0;i<c.length;i++)
+	   {
+	       if(c[i]=='a'|| c[i]=='e' || c[i]=='i' || c[i]=='o'|| c[i]=='u' || c[i]=='A' || c[i]=='E' || c[i]=='I' || c[i]=='O' || c[i]=='U')
+	       {
+	           System.out.print(c[i]);
+	       }
+	       
+	   }
+	   for(int i=0;i<c.length;i++)
+	   {
+	       if(c[i]!='a' && c[i]!='e' && c[i]!='i' && c[i]!='o' && c[i]!='u' && c[i]!='A' && c[i]!='E' && c[i]!='I' && c[i]!='O' && c[i]!='U')
+	       {
+	           System.out.print(c[i]);
+	       }
+	   }
+
+	}
+}
