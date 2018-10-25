@@ -1,0 +1,19 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int x=sc.nextInt();
+		int y=sc.nextInt();
+		int z=sc.nextInt();
+		if((x+y+z==180) && (x!=0 && y!=0 && z!=0))
+		{
+		    System.out.print("Valid triangle");
+		}
+		else
+		{
+		    System.out.print("Not a valid triangle");
+		}
+
+	}
+}
