@@ -1,0 +1,27 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int r=sc.nextInt();
+		int c=sc.nextInt();
+		int[][] a=new int[r][c];
+		for(int i=0;i<r;i++)
+		{
+		    for(int j=0;j<c;j++)
+		    {
+		        a[i][j]=sc.nextInt();
+		    }
+		}
+		int sum=0;
+		for(int i=1;i<r-1;i++)
+		{
+		    for(int j=1;j<c-1;j++)
+		    {
+		        sum=sum+a[i][j];
+		    }
+		}
+		System.out.print(sum);
+
+	}
+}
