@@ -1,0 +1,38 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		int n=s.length()/2;
+		char[] c=new char[n];
+		char[] c1=new char[s.length()-n];
+		for(int i=0;i<n;i++)
+		{
+		    c[i]=s.charAt(i);
+		}
+		int t=0;
+		int t1=0;
+		for(int i=n;i<s.length();i++)
+		{
+		   c1[t]=s.charAt(i);
+		   t++;
+		}
+		int t2=0;
+		int count=0;
+		while(count<s.length()/2)
+		{
+		    System.out.print(c1[t2]);
+		    System.out.print(c[t1]);
+		    if(t2<c1.length-1)
+		    {
+		        t2++;
+		    }
+		    if(t1<c.length-1)
+		    {
+		        t1++;
+		    }
+		    count++;
+		}
+	}
+}
