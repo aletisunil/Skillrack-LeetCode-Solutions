@@ -1,0 +1,28 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.next();
+		int n=sc.nextInt();
+		int n1=n+96;
+		char[] c=s.toCharArray();
+		int count=0;
+		for(int i=0;i<c.length;i++)
+		{
+		    if((int)c[i]==n1)
+		    {
+		        count++;
+		    }
+		}
+		if(count>=1)
+		{
+		    System.out.print("yes");
+		}
+		else
+		{
+		    System.out.print("no");
+		}
+
+	}
+}
