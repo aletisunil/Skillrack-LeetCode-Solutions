@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main  {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        String[] s1=s.split(" ");
+        if(s1[0].equals(s1[s1.length-1]))
+        {
+            System.out.print(s1[0].length());
+        }
+        else
+        {
+            System.out.print(s1[0].length()+s1[s1.length-1].length());
+        }
+}
+}
