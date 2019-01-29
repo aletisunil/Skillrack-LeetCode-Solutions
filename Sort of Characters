@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.util.Arrays;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class Main {
+
+    public static void main(String[] args) throws IOException {
+    int size;
+    Scanner sc=new Scanner(System.in);
+    size=sc.nextInt();
+    String[] s=new String[size];
+    
+    for(int i=0;i<size;i++)
+    {
+        s[i]=sc.next();
+    }
+    Arrays.sort(s);
+    for(int i=0;i<s.length;i++)
+    {
+        System.out.println(s[i]);
+    }
+    }
+    
+}
