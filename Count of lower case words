@@ -1,0 +1,33 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		String[] s1=s.split(" ");
+		int count=0;
+    int count1=0;
+		for(int i=0;i<s1.length;i++)
+		{
+		    for(int j=0;j<s1[i].length();j++)
+		    {
+		    if(s1[i].charAt(j)>='a' && s1[i].charAt(j)<='z')
+		    {
+		        count++;
+		    }
+		    }
+		    if(count==s1[i].length()-1)
+		    {
+		        count=0;
+		        count1++;
+		    }
+		    else
+		    {
+		        count=0;
+		    }
+		}
+    System.out.print(count1);
+		
+		}
+
+	}
