@@ -1,0 +1,27 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    String s=sc.next();
+    String s1="";
+    String s2="";
+    String s3="";
+    for(int i=1;i<=2;i++)
+    {
+        s1=s1+s.charAt(i);
+    }
+    for(int i=3;i<=4;i++)
+    {
+        s2=s2+s.charAt(i);
+    }
+    for(int i=5;i<=6;i++)
+    {
+        s3=s3+s.charAt(i);
+    }
+    int decimal1 = Integer.parseInt(s1,16);
+    int decimal2 = Integer.parseInt(s2,16);
+    int decimal3 = Integer.parseInt(s3,16);
+    System.out.print("("+decimal1+","+decimal2+","+decimal3+")");
+	}
+}
