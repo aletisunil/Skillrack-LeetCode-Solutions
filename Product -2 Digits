@@ -1,0 +1,19 @@
+#Python
+
+x=input()
+y=""
+z=y.join(x)
+if(len(x)%2==0):
+    for i in range(len(x)-1):
+        if(i%2==0):
+            i1=int(x[i])
+            i2=int(x[i+1])
+            print(i1*i2)
+         
+else:
+    for i in range(len(x)-1):
+        if(i%2==0):
+            i1=int(x[i])
+            i2=int(x[i+1])
+            print(i1*i2)
+    print(x[len(x)-1])
