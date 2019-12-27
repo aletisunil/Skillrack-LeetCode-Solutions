@@ -1,0 +1,15 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int i=sc.nextInt();
+		int k=0;
+		while(i>1){
+		k=k+(i%1000);
+		i=i/1000;
+		}
+		System.out.print(k);
+
+	}
+}
