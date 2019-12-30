@@ -1,0 +1,26 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.next();
+		String s1=sc.next();
+		char[] c=s.toCharArray();
+		char[] c1=s1.toCharArray();
+		int p=0;
+		for(int i=0;i<c.length;i++){
+		    for(int j=0;j<c1.length;j++){
+		        if(s.charAt(i)==s1.charAt(j)){
+		            p=1;
+		    }
+		}
+		}
+		if(p==0){
+		    System.out.print("VALID");
+		}
+		else{
+		    System.out.print("INVALID");
+		}
+
+	}
+}
