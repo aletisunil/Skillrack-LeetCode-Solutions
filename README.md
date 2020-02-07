@@ -1,1 +1,1 @@
-# Skillrack 😉
+# Skillrack Code Challenges
