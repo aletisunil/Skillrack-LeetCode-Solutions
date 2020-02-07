@@ -1,0 +1,33 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+	 Scanner sc=new Scanner(System.in);
+	 String s=sc.nextLine();
+	 char[] c=s.toCharArray();
+	 int c1=0;
+	 int c2=0;
+	 for(int i=0;i<s.length();i++){
+	     if(c[i]=='S'){
+	         c1=i;
+	     }
+	     else if(c[i]=='E'){
+	         c2=i;
+	     }
+	 }
+	 int c4=0;
+	 String c3="";
+     for(int i=1;i<c2;i++){
+          c3=c3+c[i];
+          c4=Integer.parseInt(c3);
+     }
+     String c5="";
+     int c6=0;
+     for(int i=c2+1;i<s.length();i++){
+         c5=c5+c[i];
+         c6=Integer.parseInt(c5);
+     }
+     System.out.print("Season "+c4+",");
+     System.out.print(" Episode "+c6);
+	}
+}
