@@ -1,0 +1,24 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.next();
+		char[] c=s.toCharArray();
+		int n=sc.nextInt();
+		String s1="";
+		String s2="";
+    for(int i=0;i<n;i++){
+		   s1=s1+s.charAt(i);
+		    }
+		for(int i=c.length-n;i<c.length;i++){
+		    s2=s2+s.charAt(i);
+		    }
+		if(s1.equals(s2){
+		    System.out.print("yes");
+		}
+		else{
+		    System.out.print("no");
+		}
+	}
+}
