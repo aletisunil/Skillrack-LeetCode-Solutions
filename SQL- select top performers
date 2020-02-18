@@ -1,0 +1,1 @@
+select id,name from player where country = 'INDIA' and goldmedalscount > 5 and silvermedalscount > 10 and bronzemedalscount > 15 order by id asc
