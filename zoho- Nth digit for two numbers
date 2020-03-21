@@ -1,0 +1,12 @@
+d1=input("Enter the d1: ")
+d2=input("Enter the d2: ")
+n=int(input("enter the location: "))
+result = d1+d2
+result2 = d2+d1
+mylist= []
+for item in range(0,100000):
+    if(result in str(item)):
+        mylist.append(item)
+    if(result2 in str(item)):
+        mylist.append(item)
+print(mylist[n-1])
