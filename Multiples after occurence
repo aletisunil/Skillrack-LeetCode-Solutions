@@ -1,0 +1,22 @@
+n1=input()
+my=n1.split(" ")
+n=int(my[0])
+x=int(my[1])
+mylist=[]
+count=0
+k=0;
+c=0;
+mylist=input()
+mylist1=mylist.split(" ")
+for i in range(n):
+    if(int(mylist1[i])==x):
+        k=i;
+        c=1;
+        break;
+for p in range(k,n):
+    if(int(mylist1[p])%x==0 and int(mylist1[p])>x):
+        count=count+1;
+if(c==1):
+    print(count)
+else:
+    print(0)
