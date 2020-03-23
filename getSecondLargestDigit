@@ -1,0 +1,8 @@
+n=input()
+myset=set(n)
+myset=sorted(myset)
+mylist=list(myset)
+if(len(mylist)>=2):
+    print(mylist[1])
+else:
+    print(-1)
