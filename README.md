@@ -1,1 +1,1 @@
-Skillrack's Daily Challenges
+This repository contains solutions for problems hosted at Skillrack
