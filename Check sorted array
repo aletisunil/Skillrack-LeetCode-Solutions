@@ -1,0 +1,11 @@
+n=int(input())
+st=input()
+mylist=st.split(" ")
+for i in range(0,len(mylist)):
+    mylist[i]=int(mylist[i])
+mylist1=sorted(mylist)
+mylist2=mylist1[::-1]
+if mylist == mylist1 or mylist == mylist2:
+    print("yes")
+else:
+    print("no")
