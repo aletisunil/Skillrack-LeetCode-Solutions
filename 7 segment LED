@@ -1,0 +1,21 @@
+n=input("Enter number: \n")
+mylist=list(n)
+count=0
+for i in range(len(mylist)):
+    if mylist[i] =='1':
+        count=count+2
+    if mylist[i] =='2' or mylist[i]=='3' or mylist[i]=='5':
+        count=count+5
+    if mylist[i]=='4':
+        count=count+4
+    if mylist[i]=='6':
+        count=count+6
+    if mylist[i]=='8':
+        count=count+7
+    if mylist[i]=='0':
+        count=count+6
+    if mylist[i]=='7':
+        count=count+3
+    if mylist[i]=='9':
+        count=count+6
+print(count)
