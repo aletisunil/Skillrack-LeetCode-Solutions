@@ -1,0 +1,11 @@
+n=int(input())
+n1=input().split(" ")
+n2=input().split(" ")
+count=0
+for i in range(0,n):
+    if (int(n1[i]) == int(n2[n-i-1])):
+        count=count+1
+if count==n:
+    print(1)
+else:
+    print(0)
