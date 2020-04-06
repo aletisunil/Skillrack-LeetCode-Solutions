@@ -1,0 +1,8 @@
+word=input()
+word=word[::-1]
+count=3
+print(word[0],end="")
+for i in range(3,len(word)+1):
+    if count-1 <= len(word):
+        print(word[count-1],end="")
+    count=count+i;
