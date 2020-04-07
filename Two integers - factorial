@@ -1,0 +1,4 @@
+import math
+numbers=input().split(" ")
+result=math.factorial(int(numbers[0]))/math.factorial(int(numbers[1]))
+print(math.trunc(result))
