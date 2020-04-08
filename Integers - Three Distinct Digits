@@ -1,0 +1,11 @@
+n =int(input())
+numbers=input().split(" ")
+numbers_set={}
+flag=0
+for i in range(n):
+    numbers_set[i]=set(numbers[i])
+    if len(numbers_set[i])>=3:
+        print(numbers[i],end=" ")
+        flag=1
+if flag==0:
+    print(-1)
