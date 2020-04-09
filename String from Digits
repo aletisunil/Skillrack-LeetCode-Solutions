@@ -1,0 +1,8 @@
+n=input()
+string=input().split(" ")
+for i in range(0,len(n)):
+    k=n[i]
+    try:
+        print(string[int(k)],end="")
+    except:
+        pass
