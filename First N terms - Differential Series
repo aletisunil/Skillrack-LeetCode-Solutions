@@ -1,0 +1,9 @@
+n=int(input())
+frst=2
+count=0
+print(frst,end=' ')
+for i in range(3,n*n,2):
+    if(count<n-1):
+        frst=frst+i
+        print(frst,end=" ")
+        count=count+1
