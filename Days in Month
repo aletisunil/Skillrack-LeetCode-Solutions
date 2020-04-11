@@ -1,0 +1,16 @@
+num=int(input())
+if num<=12:
+    if num<=7:
+        if num%2!=0:
+            print(31)
+        elif num==2:
+            print(28)
+        else:
+            print(30)
+    elif num>7:
+        if num%2==0:
+            print(31)
+        else:
+            print(30)
+else:
+    print("Invalid")
