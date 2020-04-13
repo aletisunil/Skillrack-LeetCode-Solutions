@@ -1,0 +1,11 @@
+number=input()
+string='0'
+sum=0
+for i in number:
+    string='0'
+    k=int(i)
+    while(k>-1):
+        string=string+str(k)
+        k=k-1
+    sum=sum+int(string)
+print(sum)
