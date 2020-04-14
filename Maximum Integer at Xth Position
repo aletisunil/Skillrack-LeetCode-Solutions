@@ -1,0 +1,8 @@
+num=input().split(" ")
+numlist=input().split(" ")
+numlist=[int(i) for  i in numlist]
+num=[int(i) for i in num]
+numlist=sorted(numlist)
+numlist=numlist[::-1]
+modlist=numlist[1::]
+modlist.insert(num[1]-1,numlist[0])
