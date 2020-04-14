@@ -6,3 +6,4 @@ numlist=sorted(numlist)
 numlist=numlist[::-1]
 modlist=numlist[1::]
 modlist.insert(num[1]-1,numlist[0])
+print(*modlist,sep=" ")
