@@ -1,0 +1,16 @@
+n=int(input())
+n1=0
+total=0
+def add(n):
+    global n1
+    global total
+    while(n>0):
+        n1=n%10
+        total=total+n1
+        n=int(n/10)
+add(n)
+while total>9:
+    n=total
+    total=0
+    add(n)
+print(total)
