@@ -1,0 +1,5 @@
+string=input().strip()
+sum=0
+for i in string:
+    sum=sum+ord(i)
+print(sum)
