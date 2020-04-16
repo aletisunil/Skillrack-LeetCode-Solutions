@@ -1,0 +1,13 @@
+string=input().strip()
+vowels=""
+for i in string:
+    if i in 'aeiou' or i in 'AEIOU':
+        vowels=vowels+i
+vowels=sorted(vowels)
+k=0
+string=list(string)
+for i in range(len(string)):
+    if string[i] in 'aeiou' or string[i] in 'AEIOU':
+        string[i]=vowels[k]
+        k=k+1
+print(*string,sep="")
