@@ -1,0 +1,4 @@
+string=input()
+string=list(string.split(" "))
+for i in range(len(string)):
+    print(string[i][::-1],end=" ")
