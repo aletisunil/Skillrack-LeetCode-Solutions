@@ -1,0 +1,5 @@
+num=int(input())
+stringList=input().strip().split(" ")
+stringList=sorted(stringList)
+print(stringList[0])
+print(stringList[num-1])
