@@ -1,0 +1,10 @@
+number=int(input())
+myset=set()
+while number>0:
+    num=number%10;
+    myset.add(num)
+    number=int(number/10)
+if len(myset)==3:
+    print("yes")
+else:
+    print("no")
