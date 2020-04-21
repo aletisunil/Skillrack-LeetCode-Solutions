@@ -1,0 +1,14 @@
+num=int(input())
+numberList=input().split(" ")
+numberList1=[]
+numberList2=[]
+for i in range(num):
+    numberList1.append(int(numberList[i]))
+numberList2=sorted(numberList1,reverse=True)
+flag=0
+if numberList1==numberList2:
+    flag=1
+if flag==1:
+    print("yes")
+else:
+    print("no")
