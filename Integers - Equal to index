@@ -1,0 +1,9 @@
+num=int(input())
+mylist=input().split(" ")
+flag=0
+for i in range(num):
+    if i==int(mylist[i]):
+        print(int(mylist[i]),end=" ")
+        flag=1
+if flag==0:
+    print("-1")
