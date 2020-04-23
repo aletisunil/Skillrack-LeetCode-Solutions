@@ -1,0 +1,13 @@
+n=int(input())
+num=input().split(" ")
+flag=0
+num=[int(i) for i in num]
+for i in range(n):
+    if i%2!=0 and abs(num[i])%2!=0:
+        print(num[i],end=" ")
+        flag=1
+    if i%2==0 and abs(num[i])%2==0:
+        print(num[i],end=" ")
+        flag=1
+if flag==0:
+    print(-1)
