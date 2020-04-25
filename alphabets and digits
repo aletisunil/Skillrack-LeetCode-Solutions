@@ -1,0 +1,12 @@
+word=input()
+string=""
+number=""
+for char in word:
+    if ord(char)>=97 and ord(char)<=122:
+        string+=char
+    if ord(char)>=65 and ord(char)<=90:
+        string+=char
+    if ord(char)>=48 and ord(char)<=57:
+        number+=char
+print(string,end="")
+print(number)
