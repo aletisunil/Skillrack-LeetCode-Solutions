@@ -1,0 +1,14 @@
+n=input().split(" ")
+n=[int(i) for i in n]
+num=input().split(" ")
+num=[int(i) for i in num]
+flag=0
+for i in range(n[0]):
+    for j in range(i,n[0]):
+        if num[i]+num[j] == n[1]:
+            flag=1
+            break
+if flag==1:
+    print("yes")
+else:
+    print("no")
