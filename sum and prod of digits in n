@@ -1,0 +1,11 @@
+num=input()
+num1=[int(i) for i in num]
+total=0
+prod=1
+for i in num1:
+    total=total+i
+    prod=prod*i
+if total+prod == int(num):
+    print("yes")
+else:
+    print("no")
