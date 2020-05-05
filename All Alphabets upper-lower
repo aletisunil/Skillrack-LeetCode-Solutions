@@ -1,0 +1,11 @@
+s1=input().lower().strip()
+s2=input().lower().strip()
+s3=set()
+for i in s1:
+    s3.add(i)
+for i in s2:
+    s3.add(i)
+if len(s3) ==26:
+    print("yes")
+else:
+    print("no")
