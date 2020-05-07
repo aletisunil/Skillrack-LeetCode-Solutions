@@ -1,0 +1,15 @@
+num=input().strip()
+num=[int(i) for i in num]
+rs=[]
+count=0
+for i in num:
+    if i==1:
+        count=count+1;
+        rs.append(count)
+    else:
+        rs.append(count)
+        count=0
+if max(rs)== 1 or max(rs)==0:
+    print("-1")
+else:
+    print(max(rs))
