@@ -1,0 +1,13 @@
+n=int(input())
+links=[]
+for i in range(n):
+    link=input().strip().split("www.")
+    links.append(link)
+linkSet=set()
+for i in range(n):
+    if len(links[i])==2:
+        linkSet.add(str(links[i][1]))
+    else:
+        k=str(links[i]).replace("['",'').replace("']",'')
+        linkSet.add(k)
+print(len(linkSet))
