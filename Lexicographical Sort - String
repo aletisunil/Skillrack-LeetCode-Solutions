@@ -1,0 +1,4 @@
+n=int(input())
+letters=input().strip()
+letters=sorted(list(letters))
+print(*letters,sep="")
