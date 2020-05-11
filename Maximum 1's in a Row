@@ -1,0 +1,16 @@
+dim=input().split(" ")
+mat=[]
+num=0
+result=[]
+count=0
+for i in range(int(dim[0])):
+    num=input().strip()
+    num=num.replace(" ","")
+    mat.append(num)
+for i in range(len(mat)):
+    count=0
+    for j in range(len(mat[i])):
+        if mat[i][j]=='1':
+            count+=1
+    result.append(count)
+print(max(result))
