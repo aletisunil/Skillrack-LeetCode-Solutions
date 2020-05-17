@@ -1,0 +1,11 @@
+n=int(input())
+num=input().strip().split(" ")
+num=[int(i) for i in num]
+upNum=[]
+upNum.append(num[0])
+for i in range(1,n):
+    if num[i-1]<num[i]:
+        num[i]=(num[i-1])
+    else:
+        num[i]=(num[i])
+print(*num,sep=" ")
