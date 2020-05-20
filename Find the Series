@@ -1,0 +1,8 @@
+n=int(input())
+num=input().split(" ")
+num=[int(i) for i in num]
+k=max(num)
+for i in range(k):
+    num.remove(i+1)
+print(k,end=" ")
+print(max(num))
