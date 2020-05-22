@@ -1,0 +1,8 @@
+keyword=input().lower()
+key=set()
+for i in keyword:
+    key.add(i)
+if 'x' and 'y' in key and len(key)==2 or len(key)==1:
+    print("yes")
+else:
+    print("no")
