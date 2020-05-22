@@ -1,0 +1,8 @@
+sec=int(input())
+day=sec//(24*3600)
+sec=sec % (24*3600)
+hour =str(sec //3600).zfill(2)
+sec%=3600
+minutes = str(sec//60).zfill(2)
+sec=str(sec%60).zfill(2)
+print("{}D {}:{}:{}".format(day,hour,minutes,sec))
