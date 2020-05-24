@@ -1,0 +1,10 @@
+n=input()
+result=0
+def fact(x):
+    mult=1
+    for i in range(1,x+1):
+        mult=mult*i
+    return mult
+for i in n:
+    result+=fact(int(i))
+print(result)
