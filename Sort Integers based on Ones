@@ -1,0 +1,20 @@
+n=int(input())
+num=input().split(" ")
+num=sorted([int(i) for i in num])
+binNum=[]
+k=0
+for i in range(0,n):
+    k=bin(num[i]).replace("0b","")
+    binNum.append(k)
+countResult=[]
+for i in range(0,n):
+    count=0
+    for j in str(binNum[i]):
+        if j=='1':
+            count+=1
+    countResult.append(count)
+countDict={i: countResult[i] for i in range(0,n)}
+sort_count=sorted(countDict.items(),key=lambda x:x[1],reverse=True)
+for i in sort_count:
+    print(num[i[0]],end=" ")
+
