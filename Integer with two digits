@@ -1,0 +1,8 @@
+n=input()
+res=set()
+for i in n:
+    res.add(i)
+if len(res) == 2:
+    print("YES")
+else:
+    print("NO")
