@@ -1,0 +1,17 @@
+num=input().strip().split(" ")
+num=[int(i) for i in num]
+num[0]=bin(num[0]).replace("0b","")
+num[1]=bin(num[1]).replace("0b","")
+num[0]=num[0][::-1]
+num[1]=num[1][::-1]
+num=sorted(num,key=len)
+res=[]
+flag=0
+for i in range(0,len(num[0])):
+    if num[0][i]!=num[1][i]:
+        res.append(i)
+        flag=1
+if flag==1:
+    print(res[0]+1)
+else:
+    print("-1")
