@@ -1,0 +1,21 @@
+word1=input().strip()
+word2=input().strip()
+myset1=set()
+for i in range(0,len(word1)):
+    myset1.add(word1[i])
+myset2=set()
+flag=0
+for i in range(0,len(word2)):
+    myset2.add(word2[i])
+myset1=sorted(myset1)
+myset2=sorted(myset2)
+if len(myset1)==len(myset2):
+    for i in range(0,len(myset1)):
+        if myset1[i]!=myset2[i]:
+            flag=1
+else:
+    flag=1
+if flag==0:
+    print("yes")
+else:
+    print("no")
