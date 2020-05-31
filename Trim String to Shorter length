@@ -1,0 +1,8 @@
+words=input().split(" ")
+updated=sorted(words,key=len)
+length=len(updated[0])
+for i in range(length):
+    print(words[0][i],end="")
+print(end=" ")
+for i in range(length):
+    print(words[1][i],end="")
