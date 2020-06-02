@@ -1,0 +1,5 @@
+from collections import Counter
+string=input().strip()
+wc=Counter(string)
+s=max(wc.values())
+print(s)
