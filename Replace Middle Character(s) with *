@@ -1,0 +1,16 @@
+import math
+word=input().strip()
+n=len(word)
+k=math.floor(n/2)
+if n%2!=0:
+    for i in range(n):
+        if i!=k:
+            print(word[i],end="")
+        else:
+            print("*",end="")
+else:
+    for i in range(n):
+        if i!=k and i!=k-1:
+            print(word[i],end="")
+        else:
+            print("*",end="")
