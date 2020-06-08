@@ -1,0 +1,5 @@
+_string=input().strip()
+for i in _string:
+    k=_string.count(i)
+    if k==1:
+        print(i,end=" ")
