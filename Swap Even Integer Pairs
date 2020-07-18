@@ -1,0 +1,21 @@
+n=int(input())
+numlist=input().split(' ')
+numlist=[int(i) for i in numlist]
+evenlist=[]
+for i in numlist:
+    if i%2==0:
+        evenlist.append(i)
+evenList=[]
+for i in range(0,len(evenlist)):
+    if i%2!=0:
+        evenList.append(evenlist[i])
+for i in range(len(evenlist)):
+    if i%2==0:
+        evenList.insert(i+1,evenlist[i])
+k=0
+for i in numlist:
+    if i%2==0:
+        print(evenList[k],end=" ")
+        k=k+1
+    else:
+        print(i,end=" ")
