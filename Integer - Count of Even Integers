@@ -1,0 +1,18 @@
+n=input()
+result=[]
+s=[]
+myList=[','.join(i) for i in n]
+for i in range(len(n)):
+    for k in range(i,len(n)):
+        s=[]
+        for j in range(i,k+1):
+            s.append(int(myList[j]))
+        result.append(s)
+count=0
+for i in result:
+    if(i[0]!=0):
+        strings=[str(j) for j in i]
+        a_string=''.join(strings)
+        if int(a_string)%2==0:
+            count=count+1
+print(count)
