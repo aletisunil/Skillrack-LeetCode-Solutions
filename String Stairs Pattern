@@ -1,0 +1,17 @@
+word=input()
+c=len(word)
+s=0
+p=1
+for i in range(len(word)):
+    for k in range(c-1):
+        print('-',end="")
+    c=c-1
+    for j in range(s+1):
+        print(word[j],end="")
+    print("")
+    s=s+1
+for i in range(len(word)):
+    for j in range(p,len(word)):
+        print(word[j],end="")
+    p=p+1
+    print("")
