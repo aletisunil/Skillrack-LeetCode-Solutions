@@ -30,6 +30,7 @@ class Solution:
         for ppl,start,end in trips:
             l.append((start,ppl))
             l.append((end,-ppl))
+        l.sort()
         for _,ppl in l:
             capacity-=ppl
             if capacity <0:
